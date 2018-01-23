@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Sequences sunburst</title>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script type="text/javascript" src="colors_data.js"></script>
+    <link rel="stylesheet" type="text/css"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,600">
+    <link rel="stylesheet" type="text/css" href="sequences.css"/>
+  </head>
+  <body>
+    <div id="main">
+      <div id="chart">
+        <div id="explanation" style="visibility: hidden;">
+          <span id="percentage"></span><br/>
+          درصد از بودجه
+        </div>
+      </div>
+    </div>
+    <div id="sidebar">
+      <div id="sequence"></div>
+     <!--  <input type="checkbox" id="togglelegend"> راهنما<br/>
+      <div id="legend" style="visibility: hidden;"></div> -->
+    </div>
+    <script type="text/javascript" src="sequences.js"></script>
+    <script type="text/javascript">
+      // Hack to make this example display correctly in an iframe on bl.ocks.org
+      d3.select(self.frameElement).style("height", "400px");
+  </script> 
+  </body>
+</html>
+
